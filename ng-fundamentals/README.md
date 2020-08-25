@@ -25,3 +25,20 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+
+practice sessions
+https://jcoop.io/angular-2-practice-exercises/
+
+
+my files
+https://github.com/spt2kor/Angular_/tree/master/ng-fundamentals
+
+
+cusome twitter bootstrap node module
+https://www.npmjs.com/package/ngf-bootstrap
+
+
+cooper source code
+https://github.com/jmcooper/angular-fundamentals-files
