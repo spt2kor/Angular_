@@ -8,11 +8,11 @@ import {Component,Input, Output, EventEmitter} from '@angular/core'
             <div>Date: {{_eventThumbnail?.date}}</div>
             <div>Time: {{_eventThumbnail?.time}}</div>
             <div>Price: \${{_eventThumbnail?.price}}</div>
-            <div *ngIf="_eventThumbnail?.location">
+            <div [hidden]= "! _eventThumbnail?.location">
                 <span>Location: {{_eventThumbnail?.location?.address}}</span>                
                 <span class="pad-left"> {{_eventThumbnail?.location?.city}} , {{_eventThumbnail?.location?.country}}</span>
             </div>         
-            <div *ngIf="_eventThumbnail?.OnlineUrl">
+            <div [hidden]= "! _eventThumbnail?.OnlineUrl">
             Online Url: {{_eventThumbnail?.OnlineUrl}}
             </div>  
         </div>
