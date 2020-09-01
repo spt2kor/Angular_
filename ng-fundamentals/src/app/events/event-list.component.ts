@@ -7,17 +7,8 @@ import {Component} from '@angular/core'
         <h1>
             Upcomming Angular Events
         </h1>
-
-        <div class="well">
-            <h2>Good Morning </h2>
-        </div>
         <hr/>
-        <event-thumbnail #childThumbnail [_eventThumbnail]="_eventFromEventList" 
-        (_eventForOnClickThumbnailBtn)="OnChildThumbnailBtnClickEvent($event)" ></event-thumbnail>
-         
-        <h3> {{childThumbnail._lable}}</h3>
-        <button class="btn btn-primary" (click)="childThumbnail.OnParentClickByRef()"> 
-            call Chield by ref </button>
+        <event-thumbnail [_eventThumbnail]="_eventFromEventList"></event-thumbnail>         
     </div>
     `
 })
@@ -36,8 +27,4 @@ export class EventListComponent{
             country:'India'
         }
     };
-
-    OnChildThumbnailBtnClickEvent(passedMsg){
-        console.log("EventsList: Received Event from chiled = " , passedMsg);
-    }
 }
